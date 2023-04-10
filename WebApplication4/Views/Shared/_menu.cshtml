@@ -1,0 +1,15 @@
+﻿
+@model List<WebApplication4.Models.MenuModel>
+
+
+<div class="navbar-collapse collapse">
+  <ul class="nav navbar-nav">
+
+    @foreach (var menu in Model)
+    {
+      <li>@Html.ActionLink(menu.Name, menu.ActionName, menu.ControllerName)</li>
+    }
+
+
+  </ul>
+</div>
